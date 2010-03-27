@@ -1,0 +1,73 @@
+= ohm_extra_validations
+
+* http://github.com/gnrfan/ohm_extra_validations
+
+== DESCRIPTION:
+
+Ohm is an object to hash mapper for the Redis database. It supports assertions but only the most basic are included. For anything else you are expected to write regular expressions. Since modern web applications make heavy use or slugs, email address, URLs and IP addresses you'll end up writing or pasting the same regular expressions all the time. So then is when this gem is useful, adding specialized assertions for this kind of elements.
+
+== FEATURES/PROBLEMS:
+
+Assertions for validating:
+
+* Slugs
+* Email addresses
+* URLs
+* IPv4 Addresses
+
+== SYNOPSIS:
+
+    class BlogPost < Ohm::Model
+      attribute :slug
+
+      index :slug
+
+      def validate
+        assert_slug :slug
+      end
+    end
+
+    class Comment < Ohm::Model
+        attribute :ip_address
+        attribute :homepage
+        attribute :email
+
+        def validate
+            assert_ipaddr :ip_address
+            assert_url :homepage
+            assert_email :email
+        end
+    end
+
+== REQUIREMENTS:
+
+* ohm (>=0.0.33)
+
+== INSTALL:
+
+* sudo gem install ohm
+
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2010 Antonio Ognio
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
