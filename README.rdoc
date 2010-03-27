@@ -46,6 +46,8 @@ Assertions for validating:
 == INSTALL:
 
 * sudo gem install ohm
+* gem build Rakefile
+* sudo gem install ohm_extra_validations-0.0.1.gem
 
 == LICENSE:
 
