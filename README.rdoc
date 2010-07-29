@@ -2,11 +2,17 @@
 
 * http://github.com/gnrfan/ohm_extra_validations
 
+== IMPORTANT NOTE:
+
+This gem is no longer actively being mantained. I was merged into Ohm-Contrib[http://labs.sinefunc.com/ohm-contrib/] as WebValidations[http://labs.sinefunc.com/ohm-contrib/doc/Ohm/WebValidations.html]. Please use this gem instead:
+
+http://github.com/sinefunc/ohm-contrib
+
 == DESCRIPTION:
 
 Ohm is an object to hash mapper for the Redis database. It supports assertions but only the most basic are included. For anything else you are expected to write regular expressions. Since modern web applications make heavy use or slugs, email address, URLs and IP addresses you'll end up writing or pasting the same regular expressions all the time. So then is when this gem is useful, adding specialized assertions for this kind of elements.
 
-== FEATURES/PROBLEMS:
+== FEATURES:
 
 Assertions for validating:
 
