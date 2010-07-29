@@ -4,7 +4,9 @@
 
 == IMPORTANT NOTE:
 
-This gem is no longer actively being mantained. I was merged into Ohm-Contrib[http://labs.sinefunc.com/ohm-contrib/] as WebValidations[http://labs.sinefunc.com/ohm-contrib/doc/Ohm/WebValidations.html]. Please use this gem instead:
+This gem is no longer actively being mantained. It was merged into Ohm-Contrib[http://labs.sinefunc.com/ohm-contrib/] as WebValidations[http://labs.sinefunc.com/ohm-contrib/doc/Ohm/WebValidations.html]. 
+
+Please use this gem instead:
 
 http://github.com/sinefunc/ohm-contrib
 
